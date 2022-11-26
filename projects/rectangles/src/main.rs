@@ -1,15 +1,17 @@
-#[derive(Debug)]
-struct Rectangle {
-    width: u32,
-    height: u32,
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
 }
 
 fn main() {
-    let scale = 2;
-    let rect1 = Rectangle {
-        width: dbg!(30 * scale),
-        height: 50,
+    let mut user1 = User {
+        email: String::from("someone@example.com"),
+        username: String::from("someusername123"),
+        active: true,
+        sign_in_count: 1,
     };
 
-    dbg!(&rect1);
+    user1.email = String::from("anotheremail@example.com");
 }
