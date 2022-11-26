@@ -16,4 +16,5 @@ fn main() {
     };
 
     user1.email = String::from("anotheremail@example.com");
+    
 }
