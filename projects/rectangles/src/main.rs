@@ -1,4 +1,5 @@
 #[allow(dead_code)]
+#[derive(Debug)]
 
 struct User {
     active: bool,
@@ -16,5 +17,8 @@ fn main() {
     };
 
     user1.email = String::from("anotheremail@example.com");
+
+    println!("rect1 is {:#?}", user1);
     
 }
+add
